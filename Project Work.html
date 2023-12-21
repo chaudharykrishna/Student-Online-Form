@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+    <title> Student Online Form</title>
+    <style>
+        .P1 {
+            background-color: green;
+        }
+
+        .P2 {
+            background-color: yellow;
+        }
+
+        .hero-body {
+            margin-left: 525px;
+        }
+
+        .bg-img {
+            background-color: #7fd4dd73;
+            background-size: cover;
+
+        }
+
+        .content {
+            margin-left: 372px;
+        }
+
+        .submit {
+            padding: 10px 20px;
+            border-radius: 9px;
+            background: #90e18e;
+            font-weight: 800;
+        }
+
+        .reset {
+            padding: 10px 20px;
+            border-radius: 9px;
+            background: #e75428;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body class="bg-img">
+    <table border="3">
+        <center>
+            <p class="P1"> <b> Tilottama Campus Of IT </b> </p>
+            <p class="P2"><b> Student Detailed Form</b></p>
+        </center>
+        <hr color="red" width="60%" size="5">
+        <form method="post" action="myserver.php">
+            <p text-align="center">Tilottama campus is established in 1996 as the first private college in Rupandehi by
+                a team of dedicated, experienced and enterprising academicians
+                to cater for the growing demands of parents and students in the higher education
+                by providing quality education and guaranteeing top class graduates.
+                Here is the online registration form to study in this college. </p>
+                <p style="text-align:center;"><img src="tilottamaLOGO.jpg" alt="logo" width="350"></p>
+            <fieldset>
+                <legend align="top" style="margin-left:auto; margin-right:auto">Personal Information</legend>
+                <div class="hero-body">
+                    <div class="main-content">
+                        <label>Name:</label><br>
+                        <input type="text" id="name" size="20" maxlength="20"><br>
+                        <label>Date Of Birth:</label><br>
+                        <input type="number" id="dob" size="20" maxlength="20"><br>
+                        <label>Address:</label><br>
+                        <input type="text" id="addr" size="20" maxlength="20"><br>
+                        <label>Father's Name:</label><br>
+                        <input type="text" id="name" size="20" maxlength="20"><br>
+                        <label>Mother's Name:</label><br>
+                        <input type="text" id="name" size="20" maxlength="20"><br>
+                        <label>Contact Number:</label><br>
+                        <input type="Contact" id="number" size="20" maxlength="20"><br>
+                        <label>E-mail ID:</label><br>
+                        <input type="text" id="password" size="20" maxlength="50">
+                        <p>Gender: <input type="radio" name="Gender" value="Male">Male
+                            <input type="radio" name="Gender" value="Female">Female
+                            <input type="radio" name="Gender" value="Other">Other
+                        </p>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend align="center"> Hobbies & Education</legend>
+                <div class="content">
+                    <p>Hobbies:<input type="checkbox" name="chk 1" value="Watching movies">Movies
+                        <input type="checkbox" name="chk 2" value="Playing football">Football
+                        <input type="checkbox" name="chk 3" value="Browsing webs">Webs
+                        <input type="checkbox" name="chk 4" value="Playing cricket">Cricket
+                        <input type="checkbox" name="chk 5" value="Reading books">Books
+                        <input type="checkbox" name="chk 6" value="Others">Others
+                    </p>
+                    <p>Faculty:
+                        <select>
+                            <option>Science</option>
+                            <option>Management</option>
+                        </select>
+                    </p>
+                    Subjects: <br>
+                    <p>For Science: <br>
+                        <input type="checkbox" name="chk 1" value="English" checked>English
+                        <input type="checkbox" name="chk 2" value="Nepali" checked>Nepali
+                        <input type="checkbox" name="chk 3" value="Physics" checked>Physics
+                        <input type="checkbox" name="chk 4" value="Chemistry" checked>Chemistry
+                        <input type="checkbox" name="chk 5" value="Maths">Maths
+                        <input type="checkbox" name="chk 5" value="Social">Social
+                        <input type="checkbox" name="chk 5" value="Computer">Computer
+                        <input type="checkbox" name="chk 5" value="Biology">Biology
+                    </p>
+                    <p>For Management: <br>
+                        <input type="checkbox" name="chk 1" value="English" checked>English
+                        <input type="checkbox" name="chk 2" value="Nepali" checked>Nepali
+                        <input type="checkbox" name="chk 3" value="Finance">Finance
+                        <input type="checkbox" name="chk 4" value="Account">Account
+                        <input type="checkbox" name="chk 5" value="Maths">Maths
+                        <input type="checkbox" name="chk 6" value="Social">Social
+                        <input type="checkbox" name="chk 7" value="Computer">Computer
+                        <input type="checkbox" name="chk 7" value="Economics">Economics
+                    </p>
+                    Feedbacks:<br>
+                    <textarea rows="5" cols="50"></textarea>
+                    <p>
+                        <input class="submit" type="Submit" value="Submit">
+                        <input class="reset" type="Reset" value="Cancel">
+                    </p>
+                </div>
+            </fieldset>
+            <p>
+                <center>&copy;Copyright Tilottama Campus</center>
+        </form>
+    </table>
+</body>
+
+</html>
